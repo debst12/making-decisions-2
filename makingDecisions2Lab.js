@@ -176,7 +176,28 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-
+console.log("")
+console.log("Problem 10:")
+console.log(`The student's grade: ${letterGrade}`)
+switch(letterGrade) {
+  case 'A':
+    console.log("The student is doing excellently.");
+    break;
+  case 'B':
+    console.log("The student is doing well.");
+    break;
+  case 'C':
+    console.log("The student is doing alright.")
+    break;
+  case 'D':
+    console.log("The student is not doing very well.");
+    break;
+  case 'F':
+    console.log("The student is failing.")
+    break;
+  default:
+    console.log("Not an eligible grade. Please make sure the grade is UPPERCASE and a single letter (A,B,C,D,F).")
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -204,3 +225,17 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+console.log("")
+console.log("Problem 11:")
+for (i = 1; i < 101; i++) {
+  if (i % 15 === 0) {
+    console.log("DevMountain")
+  } else if (i % 5 === 0) {
+    console.log("Mountain")
+  } else if(i % 3 === 0) {
+    ("Dev")
+  } else {
+    console.log(i)
+  }
+}
+
