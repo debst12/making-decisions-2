@@ -8,7 +8,7 @@ var arr = [10,20,30,40,50,60]
 
 //Code Here
 firstItem = arr[0]
-console.log(firstItem)
+console.log(`Problem 1: ${firstItem}`)
 
 ////////// PROBLEM 2 //////////
 /*
@@ -16,7 +16,8 @@ console.log(firstItem)
 */
 
 //Code Here
-
+let finalName = arr.pop()
+console.log(`Problem 2: ${finalName}`)
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
@@ -28,7 +29,10 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+console.log("Problem 3:")
+for (let i = 0; i < 5; i++) {
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -43,9 +47,13 @@ let evensArr = []
 */
 
 //Code Here
-
-
-
+console.log("Problem 4:")
+for (let i = 0; i < 10; i++) {
+  if (nums[i] % 2 === 0) {
+    evensArr.push(nums[i])
+  }
+}
+console.log(evensArr)
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
