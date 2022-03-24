@@ -8,6 +8,7 @@ var arr = [10,20,30,40,50,60]
 
 //Code Here
 firstItem = arr[0]
+console.log("")
 console.log(`Problem 1: ${firstItem}`)
 
 ////////// PROBLEM 2 //////////
@@ -17,6 +18,7 @@ console.log(`Problem 1: ${firstItem}`)
 
 //Code Here
 let finalName = arr.pop()
+console.log("")
 console.log(`Problem 2: ${finalName}`)
 ////////// PROBLEM 3 //////////
 
@@ -29,8 +31,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
+console.log("")
 console.log("Problem 3:")
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < family.length; i++) {
   console.log(family[i])
 }
 
@@ -47,8 +50,9 @@ let evensArr = []
 */
 
 //Code Here
+console.log("")
 console.log("Problem 4:")
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < nums.length; i++) {
   if (nums[i] % 2 === 0) {
     evensArr.push(nums[i])
   }
@@ -65,7 +69,22 @@ var score = 74
 */
 
 //Code Here
+let grade
+if (score > 89) {
+  grade = 'A'
+} else if (score > 79) {
+  grade = 'B'
+} else if (score > 69) {
+  grade = 'C'
+} else if (score > 59) {
+  grade = 'D'
+} else {
+  grade = 'F'
+}
 
+console.log("")
+console.log('Problem 5:')
+console.log(`Your score is: ${score}. Your grade is ${grade}.`)
 
 ////////// Intermediate Problems //////////
 
@@ -80,7 +99,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
+let someNum = myFavoriteNumbers[4]
+console.log("")
+console.log(`Problem 6: ${someNum}`)
 
 ////////// PROBLEM 7 //////////
 
@@ -88,7 +109,12 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
+if (myFavoriteNumbers.length < 6) {
+  console.log("There are not enough elements in this array.")
+} else{
+  myFavoriteNumbers.splice(6, 1, 'someNum')
 
+}
 
 ////////// PROBLEM 8 //////////
 
