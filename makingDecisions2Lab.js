@@ -112,7 +112,7 @@ console.log(`Problem 6: ${someNum}`)
 
 console.log("")
 console.log("Problem 7:")
-if (myFavoriteNumbers.length < 7) {
+if (myFavoriteNumbers.length <= 7) {
   console.log("There are not enough elements in this array.")
 } else {
   myFavoriteNumbers.splice(6, 1, someNum)
