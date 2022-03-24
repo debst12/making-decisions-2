@@ -112,7 +112,6 @@ console.log(`Problem 6: ${someNum}`)
 
 console.log("")
 console.log("Problem 7:")
-console.log(myFavoriteNumbers.length)
 if (myFavoriteNumbers.length < 7) {
   console.log("There are not enough elements in this array.")
 } else {
@@ -132,7 +131,14 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
+console.log("")
+console.log("Problem 8:")
 
+for (let i = 0; i < listOfNumbers.length; i++) {
+  if (listOfNumbers[i] % 3 === 0) {
+    console.log(`${listOfNumbers[i]} is divisible by 3`)
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
